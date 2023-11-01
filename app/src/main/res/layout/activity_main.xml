@@ -43,53 +43,57 @@
                 android:text="Weather"
                 android:textColor="@color/white"
                 android:textSize="28sp" />
-            <!-- Montreal Card -->
+
             <com.example.homework_customview.WeatherCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="6dp"
                 android:layout_marginEnd="6dp"
                 android:layout_marginBottom="22dp"
-                app:city_name="Montreal, Canada"
+                app:city_name="Montreal"
+                app:country="Canada"
+                app:hasWind="false"
+                app:precipitationType="light_rain"
                 app:temperature="19°"
-                app:weather_description="Mid Rain"
-                app:weather_icon="@drawable/ic_moon_cloud_mid_rain" />
+                app:timeOfDay="night" />
 
-            <!-- Toronto Card -->
             <com.example.homework_customview.WeatherCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="6dp"
                 android:layout_marginEnd="6dp"
                 android:layout_marginBottom="22dp"
-                app:city_name="Toronto, Canada"
+                app:city_name="Toronto"
+                app:country="Canada"
+                app:hasWind="true"
                 app:temperature="20°"
-                app:weather_description="Fast Wind"
-                app:weather_icon="@drawable/ic_moon_cloud_fast_wind" />
+                app:timeOfDay="night" />
 
-            <!-- Tokyo Card -->
+
             <com.example.homework_customview.WeatherCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="6dp"
                 android:layout_marginEnd="6dp"
                 android:layout_marginBottom="22dp"
-                app:city_name="Tokyo, Japan"
+                app:city_name="Tokyo"
+                app:country="Japan"
+                app:precipitationType="heavy_rain"
                 app:temperature="13°"
-                app:weather_description="Showers"
-                app:weather_icon="@drawable/ic_sun_cloud_angled_rain" />
+                app:timeOfDay="day" />
 
-            <!-- Another Example Card -->
             <com.example.homework_customview.WeatherCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="6dp"
                 android:layout_marginEnd="6dp"
                 android:layout_marginBottom="22dp"
-                app:city_name="Texas, United States"
-                app:temperature="23°"
-                app:weather_description="Tornado"
-                app:weather_icon="@drawable/ic_tornado" />
+                app:city_name="Tennessee"
+                app:country="US"
+                app:hasWind="true"
+                app:precipitationType="tornado"
+                app:temperature="23°" />
+
 
         </LinearLayout>
     </ScrollView>

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Homework_CustomView</string>
+    <string name="light_rain">Light Rain</string>
+    <string name="heavy_rain">Heavy Rain</string>
+    <string name="light_snow">Light Snow</string>
+    <string name="tornado">Tornado</string>
+    <string name="wind">Wind</string>
 </resources>

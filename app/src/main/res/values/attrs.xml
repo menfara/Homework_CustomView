@@ -6,5 +6,17 @@
         <attr name="weather_description" format="string" />
         <attr name="weather_icon" format="reference" />
         <attr name="city_temperature_color" format="color" />
+        <attr name="country" format="string" />
+        <attr name="timeOfDay" format="enum">
+            <enum name="day" value="0" />
+            <enum name="night" value="1" />
+        </attr>
+        <attr name="precipitationType" format="enum">
+            <enum name="light_rain" value="0" />
+            <enum name="heavy_rain" value="1" />
+            <enum name="light_snow" value="2" />
+            <enum name="tornado" value="3" />
+        </attr>
+        <attr name="hasWind" format="boolean" />
     </declare-styleable>
 </resources>
