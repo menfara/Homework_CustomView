@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Homework_CustomView" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">#2E335A</item>
+        <item name="android:navigationBarColor">#1C1B33</item>
+
+
+    </style>
+
+    <style name="Theme.Homework_CustomView" parent="Base.Theme.Homework_CustomView" />
+</resources>

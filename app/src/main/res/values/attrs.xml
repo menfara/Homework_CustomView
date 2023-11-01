@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WeatherCardView">
+        <attr name="city_name" format="string" />
+        <attr name="temperature" format="string" />
+        <attr name="weather_description" format="string" />
+        <attr name="weather_icon" format="reference" />
+        <attr name="city_temperature_color" format="color" />
+    </declare-styleable>
+</resources>

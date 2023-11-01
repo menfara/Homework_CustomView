@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_gradient">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ellipse_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ellipse_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfprodisplay_regular"
+                android:paddingVertical="16dp"
+                android:text="Weather"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+            <!-- Montreal Card -->
+            <com.example.homework_customview.WeatherCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="22dp"
+                app:city_name="Montreal, Canada"
+                app:temperature="19°"
+                app:weather_description="Mid Rain"
+                app:weather_icon="@drawable/ic_moon_cloud_mid_rain" />
+
+            <!-- Toronto Card -->
+            <com.example.homework_customview.WeatherCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="22dp"
+                app:city_name="Toronto, Canada"
+                app:temperature="20°"
+                app:weather_description="Fast Wind"
+                app:weather_icon="@drawable/ic_moon_cloud_fast_wind" />
+
+            <!-- Tokyo Card -->
+            <com.example.homework_customview.WeatherCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="22dp"
+                app:city_name="Tokyo, Japan"
+                app:temperature="13°"
+                app:weather_description="Showers"
+                app:weather_icon="@drawable/ic_sun_cloud_angled_rain" />
+
+            <!-- Another Example Card -->
+            <com.example.homework_customview.WeatherCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="22dp"
+                app:city_name="Texas, United States"
+                app:temperature="23°"
+                app:weather_description="Tornado"
+                app:weather_icon="@drawable/ic_tornado" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
